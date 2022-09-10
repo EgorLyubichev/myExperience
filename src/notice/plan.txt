@@ -1,0 +1,27 @@
+Для того, чтобы иметь контроль версий, я добавил Git и создал репозиторий на GitHub.
+Для того, чтобы управлять зависимостями, необходимыми для проекта, я добавил Maven в проект.
+
+Подключил базу данных PostgreSQL. Создал новую схему my_experience_project.
+Создал таблицу user с полями id, name.
+
+Создал класс User с полями id, name.
+
+Для того, чтобы создавать бины и иметь удобные аннотации, нужно подключить Spring и Lombok
+
+- - - CONNECTION - - -
+После того, как настроил базу данных в IDE...
+В pom.xml добавил зависимость postgreSQL JDBC Driver.
+Для коннекшена нам нужно указать несколько полей (в пропертис файле)
+
+PostgreSQL_database:
+  schema:
+    tables
+Connection:
+  source:
+    database.properties
+  MyPostgerSQLConnection:
+    method: getProperties(String key)
+    method: getConnection())
+Repository:
+  UserRepository class:
+    method: userRowMapping(ResultSet rs)

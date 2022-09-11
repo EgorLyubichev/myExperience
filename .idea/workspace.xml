@@ -4,27 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ac7084-7613-40e2-8647-276db7c66b94" name="Changes" comment="Changed gitignore">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/connection/MyPostgreSQLConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/user/UserColumns.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notice/plan.txt" afterDir="false" />
+    <list default="true" id="c2ac7084-7613-40e2-8647-276db7c66b94" name="Changes" comment="I got stability connection with simple JDBC configuration">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/tamplates/jdbcTamplateConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager">
+  <component name="ChangesViewManager" show_ignored="true">
     <option name="groupingKeys">
       <option value="directory" />
+      <option value="module" />
     </option>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -32,6 +27,7 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -58,11 +54,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/ENTERPRISEAcademyProjects/jd2julystudentsapp",
+    "last_opened_file_path": "C:/ENTERPRISEAcademyProjects/myExperience",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "editor.preferences.tabs",
     "spring.configuration.checksum": "ae0b5cb058bb4bd3acd7845df0abc1f8"
   },
@@ -102,7 +101,10 @@
       <updated>1662719320624</updated>
       <workItem from="1662719322021" duration="3121000" />
       <workItem from="1662749050149" duration="1677000" />
-      <workItem from="1662801028166" duration="13243000" />
+      <workItem from="1662801028166" duration="15004000" />
+      <workItem from="1662880580242" duration="15000" />
+      <workItem from="1662881438943" duration="28000" />
+      <workItem from="1662881515481" duration="1789000" />
     </task>
     <task id="LOCAL-00001" summary="Changed gitignore">
       <created>1662719722076</created>
@@ -111,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662719722076</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="I got stability connection with simple JDBC configuration">
+      <created>1662821012084</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662821012084</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,18 +139,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed gitignore" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/lev/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="I got stability connection with simple JDBC configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="I got stability connection with simple JDBC configuration" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

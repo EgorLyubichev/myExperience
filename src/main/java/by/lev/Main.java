@@ -1,17 +1,16 @@
 package by.lev;
 
 import by.lev.user.User;
-import by.lev.user.UserRepository;
-
-import java.util.List;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        List<User> users = new UserRepository().readAll();
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext
+                ("classpath:application-context.xml");
 
-        for (User user: users) {
-            System.out.println(user);
-        }
+        User user1 = classPathXmlApplicationContext.getBean("user1", User.class);
+        System.out.println(user1);
+
 
 
 

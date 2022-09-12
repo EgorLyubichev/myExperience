@@ -1,6 +1,8 @@
 package by.lev.user;
 
 import by.lev.connection.MyPostgreSQLConnection;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Repository;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -13,7 +15,10 @@ import java.util.List;
 import static by.lev.user.UserColumns.ID;
 import static by.lev.user.UserColumns.NAME;
 
-public class UserRepository {
+
+
+@Repository
+public class UserRepository implements UserRepositoryInterface{
     public List<User> readAll() {
         String readAllScript = "select * from my_experience_project.users";
 
@@ -29,10 +34,9 @@ public class UserRepository {
             statement = connection.createStatement();
             resultSet = statement.executeQuery(readAllScript);
 
-            while(resultSet.next()){
+            while (resultSet.next()) {
                 users.add(userRowMapping(resultSet));
             }
-
 
 
         } catch (SQLException e) {

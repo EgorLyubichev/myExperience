@@ -1,18 +1,21 @@
 package by.lev;
 
 import by.lev.user.User;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import by.lev.user.UserRepositoryInterface;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext
-                ("classpath:application-context.xml");
 
-        User user1 = classPathXmlApplicationContext.getBean("user1", User.class);
-        System.out.println(user1);
+        AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext("by.lev");
+        UserRepositoryInterface userRepository = annotationConfigApplicationContext.getBean
+                ("userRepository", UserRepositoryInterface.class);
 
-
-
-
+        List<User> users = userRepository.readAll();
+        for (User user : users) {
+            System.out.println(user);
+        }
     }
 }

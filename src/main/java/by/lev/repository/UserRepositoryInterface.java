@@ -1,4 +1,4 @@
-package by.lev.userRepository;
+package by.lev.repository;
 
 import by.lev.domain.User;
 

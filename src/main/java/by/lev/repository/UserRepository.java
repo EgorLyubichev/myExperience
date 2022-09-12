@@ -1,7 +1,8 @@
-package by.lev.userRepository;
+package by.lev.repository;
 
 import by.lev.connection.MyPostgreSQLConnection;
 import by.lev.domain.User;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
@@ -12,14 +13,18 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import static by.lev.userRepository.UserColumns.ID;
-import static by.lev.userRepository.UserColumns.NAME;
+import static by.lev.repository.UserColumns.ID;
+import static by.lev.repository.UserColumns.NAME;
 
 
 
 @Repository
 @Primary
+@RequiredArgsConstructor
 public class UserRepository implements UserRepositoryInterface{
+
+    private final MyPostgreSQLConnection postgreSQLConnection;
+
     public List<User> readAll() {
         String readAllScript = "select * from my_experience_project.users";
 
@@ -31,7 +36,7 @@ public class UserRepository implements UserRepositoryInterface{
 
         try {
 
-            connection = MyPostgreSQLConnection.getConnection();
+            connection = postgreSQLConnection.getConnection();
             statement = connection.createStatement();
             resultSet = statement.executeQuery(readAllScript);
 

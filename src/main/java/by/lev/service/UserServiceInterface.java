@@ -1,4 +1,4 @@
-package by.lev.userService;
+package by.lev.service;
 
 import by.lev.domain.User;
 

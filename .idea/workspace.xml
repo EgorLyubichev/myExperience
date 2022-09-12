@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ac7084-7613-40e2-8647-276db7c66b94" name="Changes" comment="Spring xml configuration">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/user/UserRepositoryInterface.java" afterDir="false" />
+    <list default="true" id="c2ac7084-7613-40e2-8647-276db7c66b94" name="Changes" comment="Spring inject with annotations @Autowired, @Qualifier(&quot;className&quot;) (@Inject, @Named(&quot;className&quot;))">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/util/DatabaseProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/connection/MyPostgreSQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/connection/MyPostgreSQLConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/tamplates/jdbcTamplateConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/userRepository/UserColumns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/repository/UserColumns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/userRepository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/userRepository/UserRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/repository/UserRepositoryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/userService/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/userService/UserServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/service/UserServiceInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -112,7 +117,7 @@
       <workItem from="1662881438943" duration="28000" />
       <workItem from="1662881515481" duration="3080000" />
       <workItem from="1662884914336" duration="2830000" />
-      <workItem from="1662998574118" duration="717000" />
+      <workItem from="1662998574118" duration="9060000" />
     </task>
     <task id="LOCAL-00001" summary="Changed gitignore">
       <created>1662719722076</created>
@@ -135,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662883728454</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Spring annotation simple configuration">
+      <created>1662999921675</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662999921675</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Spring inject with annotations @Autowired, @Qualifier(&quot;className&quot;) (@Inject, @Named(&quot;className&quot;))">
+      <created>1663011936644</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663011936644</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +175,9 @@
     <MESSAGE value="Changed gitignore" />
     <MESSAGE value="I got stability connection with simple JDBC configuration" />
     <MESSAGE value="Spring xml configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring xml configuration" />
+    <MESSAGE value="Spring annotation simple configuration" />
+    <MESSAGE value="Spring inject with annotations @Autowired, @Qualifier(&quot;className&quot;) (@Inject, @Named(&quot;className&quot;))" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring inject with annotations @Autowired, @Qualifier(&quot;className&quot;) (@Inject, @Named(&quot;className&quot;))" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

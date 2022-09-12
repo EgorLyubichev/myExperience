@@ -1,8 +1,7 @@
 package by.lev;
 
 import by.lev.domain.User;
-import by.lev.userRepository.UserRepositoryInterface;
-import by.lev.userService.UserServiceInterface;
+import by.lev.service.UserServiceInterface;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.List;

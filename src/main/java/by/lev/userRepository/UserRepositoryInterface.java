@@ -1,6 +1,6 @@
-package by.lev.user;
+package by.lev.userRepository;
 
-import org.springframework.stereotype.Repository;
+import by.lev.domain.User;
 
 import java.util.List;
 

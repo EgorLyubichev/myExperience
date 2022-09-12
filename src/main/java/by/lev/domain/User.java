@@ -1,4 +1,4 @@
-package by.lev.user;
+package by.lev.domain;
 
 import lombok.Data;
 import org.springframework.stereotype.Component;

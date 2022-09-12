@@ -1,4 +1,4 @@
-package by.lev.user;
+package by.lev.userRepository;
 
 public interface UserColumns {
 

@@ -19,7 +19,6 @@ import static by.lev.repository.UserColumns.NAME;
 
 
 @Repository
-@Primary
 @RequiredArgsConstructor
 public class UserRepository implements UserRepositoryInterface{
 

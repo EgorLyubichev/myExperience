@@ -13,6 +13,7 @@
 		<maven.compiler.target>11</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>5.2.22.RELEASE</spring.version>
+		<hikaricp.version>5.0.1</hikaricp.version>
 	</properties>
 
 	<dependencies>
@@ -58,7 +59,11 @@
 			<version>3.12.0</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>${hikaricp.version}</version>
+		</dependency>
 
 	</dependencies>
 

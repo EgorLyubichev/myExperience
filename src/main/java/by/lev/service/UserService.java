@@ -17,6 +17,11 @@ public class UserService implements UserServiceInterface {
     public List<User> readAll() {
         return userRepository.readAll();
     }
+
+    @Override
+    public User readById(Long id) {
+        return userRepository.readById(id);
+    }
 }
 /*Именно такой вариант удобен для последующего тестирования. Это рекомендуемый вариант.*/
 

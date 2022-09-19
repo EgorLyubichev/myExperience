@@ -1,6 +1,6 @@
 package by.lev.connection;
 
-import by.lev.util.DatabaseProperties;
+import by.lev.configuration.DatabaseProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

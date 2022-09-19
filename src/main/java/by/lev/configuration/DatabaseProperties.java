@@ -1,11 +1,12 @@
-package by.lev.util;
+package by.lev.configuration;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-@Component
+@Configuration
 @Data
 @PropertySource("classpath:database.properties")
 public class DatabaseProperties {

@@ -1,4 +1,4 @@
-package by.lev.repository.jdbctamplate;
+package by.lev.repository.jdbctemplate;
 
 import by.lev.domain.User;
 import org.springframework.jdbc.core.RowMapper;
@@ -12,6 +12,7 @@ import static by.lev.repository.UserColumns.NAME;
 
 @Component
 public class UserRowMapper implements RowMapper<User> {
+
     @Override
     public User mapRow(ResultSet resultSet, int i) throws SQLException {
         User user = new User();

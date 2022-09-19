@@ -6,5 +6,7 @@ import java.util.List;
 
 
 public interface UserRepositoryInterface {
-    public List<User> readAll();
+    List<User> readAll();
+
+    User readById(Long id);
 }

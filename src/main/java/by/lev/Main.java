@@ -14,9 +14,12 @@ public class Main {
         UserServiceInterface userService = annotationConfigApplicationContext.getBean
                 (UserServiceInterface.class);
 
-        List<User> users = userService.readAll();
-        for (User user : users) {
-            System.out.println(user);
-        }
+//        List<User> users = userService.readAll();
+//        for (User user : users) {
+//            System.out.println(user);
+//        }
+
+        User user = userService.readById(3L);
+        System.out.println(user);
     }
 }
